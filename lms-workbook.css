@@ -54,10 +54,13 @@
 .lms-workbook-authoring .studio-note{border:1px solid #d8d8d8;border-radius:12px;background:#fff;padding:15px 18px;margin-bottom:20px;display:grid;gap:5px}
 .lms-workbook-authoring .studio-note span{color:#666;font-size:13px}
 .lms-workbook-authoring .studio-layout{display:grid;grid-template-columns:210px minmax(0,1fr);gap:20px;align-items:start}
+.lms-workbook-authoring .studio-main-columns{display:grid;grid-template-columns:minmax(0,1fr) 420px;gap:22px;align-items:start}
+.lms-workbook-authoring .studio-side{position:sticky;top:18px;max-height:calc(100vh - 36px);overflow-y:auto;padding-right:2px}
+@media(max-width:1150px){.lms-workbook-authoring .studio-main-columns{grid-template-columns:1fr}.lms-workbook-authoring .studio-side{position:static;max-height:none}}
 .lms-workbook-authoring .studio-sidebar{position:sticky;top:18px}
 .lms-workbook-authoring .studio-sidebar-inner{background:#fff;border:1px solid #ddd;border-radius:12px;padding:12px}
 .lms-workbook-authoring .studio-sidebar-title{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#777;padding:7px 9px}
-.lms-workbook-authoring .nav-item{padding:10px 9px;border-radius:8px;font-size:13px;color:#555;margin:2px 0}.lms-workbook-authoring .nav-item-active{background:#111;color:#fff}
+.lms-workbook-authoring .nav-item{padding:10px 9px;border-radius:8px;font-size:13px;color:#555;margin:2px 0;cursor:pointer}.lms-workbook-authoring .nav-item:hover{background:#eee}.lms-workbook-authoring .nav-item-active{background:#111;color:#fff}.lms-workbook-authoring .nav-item-active:hover{background:#111}
 .lms-workbook-authoring .nav-number{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:#eee;color:#333;font-size:11px;font-weight:700;margin-right:7px}
 .lms-workbook-authoring .editor-card,.lms-workbook-authoring .editor-section,.lms-workbook-authoring .question-editor,.lms-workbook-authoring .preview-panel,.lms-workbook-authoring .publish-panel{background:#fff;border:1px solid #ddd;border-radius:14px;padding:22px;margin-bottom:16px;box-shadow:0 2px 10px rgba(0,0,0,.03)}
 .lms-workbook-authoring .editor-card-head,.lms-workbook-authoring .editor-section-head,.lms-workbook-authoring .question-head,.lms-workbook-authoring .panel-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;margin-bottom:18px}

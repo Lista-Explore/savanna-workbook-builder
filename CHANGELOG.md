@@ -2,6 +2,14 @@
 
 ## v1.4 — 2026-09-16
 
+- Live Preview now sits alongside the editor and stays in view as you
+  scroll, instead of sitting at the bottom of a long page you had to
+  scroll away from to check your work. Falls back to the original stacked
+  layout on narrower screens.
+- The left sidebar listed "Workbook settings" and each worksheet like a
+  table of contents, but clicking them did nothing — no cursor change, no
+  handler. They're now real navigation: clicking a worksheet scrolls to it
+  and expands it first if it was collapsed.
 - Simplified the question editor: every question showed Help, Placeholder,
   Pattern, and a 5-field validation grid regardless of whether any of it
   applied — a Yes/No checkbox showed the same form as a Number field. Those
