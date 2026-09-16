@@ -2,6 +2,18 @@
 
 ## v1.4 — 2026-09-16
 
+- Fixed three buttons that didn't work as expected, found by clicking every
+  control in the Builder rather than assuming they worked:
+  - Delete (on a worksheet, section, or question) silently did nothing when
+    it was the last one, with zero feedback — no dialog, no message. It's
+    now visibly disabled with a tooltip explaining why, instead of a no-op.
+  - "Copy HTML" could throw an uncaught clipboard error and gave no
+    indication of success or failure either way. It now falls back to a
+    legacy copy method if the modern API is unavailable, and always shows
+    "Copied!" or a clear failure message.
+  - Deleting a dropdown/radio/checklist's options had no floor — you could
+    delete down to zero options, leaving a broken empty field with no
+    warning. The last option's Delete button is now disabled.
 - Fixed: every column had its own visual bucket in the Builder, but there was
   only one "+ Add content" button for the whole section, so a new item
   always landed in Column 1 regardless of which column you were looking at,
