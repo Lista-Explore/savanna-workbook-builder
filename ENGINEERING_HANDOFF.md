@@ -1,4 +1,4 @@
-# Engineering handoff — LMS Workbook Builder + Runtime v1.2
+# Engineering handoff — LMS Workbook Builder + Runtime
 
 ## Architecture
 
@@ -50,9 +50,24 @@ Section properties:
 - columns: 1, 2 or 3
 - collapsible: true/false
 - defaultOpen: true/false
-- images: zero or more
+- fields: an ordered list of items (see below)
 
-Questions and images have a `column` property.
+A section's `fields` array is a single ordered list mixing content and
+questions — there is no separate list for images. Each item has a `type` and
+a `column`. Three types are content-only, never form fields, and never carry
+a `data-field-id` or `data-pdf-name`:
+
+- `heading` — short bold text, uses the item's `label` as the heading text.
+- `text` — a free-text/instructions block, uses `label` as the body text
+  (rendered with `white-space:pre-wrap`, so newlines in the Builder's textarea
+  are preserved as line breaks).
+- `image` — has `url`, `alt`, `width` in addition to `column`; skipped
+  entirely (both in HTML and PDF output) when `url` is empty.
+
+Every other `type` is a real question and works as before. Because content
+items never get a `data-field-id`, the runtime's field-scanning selector
+(`[data-field-id]`) automatically excludes them from `getData`/`applyData`/
+`capture`/validation with no special-casing required there.
 
 The online runtime uses CSS Grid. On small screens, multi-column sections collapse to one column.
 

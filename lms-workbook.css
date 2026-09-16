@@ -156,11 +156,20 @@
 .lms-workbook-image img{display:block;max-width:100%;height:auto;margin:0 auto;border-radius:8px;border:1px solid #ddd}
 .lms-workbook-image figcaption{margin-top:7px;font-size:11px;color:#666;text-align:left}
 @media(max-width:760px){.lms-workbook-columns{grid-template-columns:1fr}.lms-workbook-section-head{display:block}.lms-workbook-section-toggle{margin-top:10px}}
-/* Builder controls for section layout and images */
+/* Builder controls for section layout */
 .lms-workbook-authoring .section-options{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:6px 0 16px}
-.lms-workbook-authoring .section-media{border-top:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1;padding:14px 0;margin:4px 0 16px}
-.lms-workbook-authoring .subhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#666}
-.lms-workbook-authoring .media-editor{border:1px solid #ddd;border-radius:10px;background:#fff;padding:13px;margin:9px 0}
-.lms-workbook-authoring .media-editor-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
 .lms-workbook-authoring .add-button-small{font-size:12px;padding:7px 10px}
 @media(max-width:850px){.lms-workbook-authoring .section-options{grid-template-columns:1fr}}
+/* v1.3 content blocks (heading / text / image mixed in with questions) */
+.lms-workbook-block-heading{font-size:16px;font-weight:700;margin:0 0 14px}
+.lms-workbook-block-text{white-space:pre-wrap;color:#333;margin:0 0 18px}
+/* v1.3 Builder card actions: move / duplicate / collapse / delete */
+.lms-workbook-authoring .card-actions{display:flex;gap:6px;flex-wrap:wrap;align-items:center;flex-shrink:0}
+.lms-workbook-authoring .card-actions .text-button{border:1px solid #ddd;border-radius:6px;padding:5px 9px}
+.lms-workbook-authoring .card-actions .text-button:disabled{opacity:.35;cursor:default}
+.lms-workbook-authoring .card-actions .text-button:hover:not(:disabled){background:#f4f4f4;text-decoration:none}
+.lms-workbook-authoring .content-block-editor{border-left:3px solid #999}
+.lms-workbook-authoring .is-collapsed .editor-card-body,.lms-workbook-authoring .is-collapsed .editor-section-body{display:none}
+/* v1.3 visible status banner (only shown once there is a message) */
+.lms-workbook-status{min-height:0;margin-top:0}
+.lms-workbook-status.has-content{margin-top:14px;padding:10px 14px;border-radius:8px;background:var(--wb-soft);border:1px solid var(--wb-line);font-size:13px;color:var(--wb-ink)}

@@ -20,8 +20,16 @@ once and shared across every workbook.
 
 ## Features
 
-- Sections can be collapsible in the student view.
-- Sections can use 1, 2 or 3 columns; questions and images can be assigned to a column.
+- A section is an ordered list you fully control: headings, free-text blocks,
+  images, and questions can be mixed in any order, not just questions.
+- Sections can be collapsible in the student view, and can use 1, 2 or 3
+  columns; any item can be assigned to a column.
+- Every worksheet, section, and item can be moved up/down, duplicated, or
+  deleted (with a confirmation) directly in the Builder.
+- Worksheet and section cards in the Builder can be collapsed while authoring,
+  to keep a long workbook navigable.
+- A "Load example workbook" button gives you a working starting point that
+  already matches the sample PDF included in this repo.
 - The generated HTML renders the real form controls, not placeholders.
 - Worksheet tabs use explicit worksheet indexes, so any number of worksheets works correctly.
 - Styling is Poppins, grayscale/black-and-white, with no brand colour — intended to be restyled per LMS.
@@ -45,12 +53,15 @@ fallback matching against legacy naming schemes from earlier versions of this
 tool so older student PDFs keep importing correctly after the workbook is
 edited.
 
-## Images
+## Images and text blocks
 
-The builder stores an image URL. In the LMS HTML this becomes a normal
-`<img>`. For PDF generation, the builder fetches and embeds the image — the
-URL must allow cross-origin access for embedding to succeed. If it can't be
-embedded, the PDF shows a labelled placeholder instead of failing.
+An image is just another item in a section, positioned wherever you place it
+relative to your questions. The builder stores an image URL; in the LMS HTML
+this becomes a normal `<img>`. For PDF generation, the builder fetches and
+embeds the image — the URL must allow cross-origin access for embedding to
+succeed. If it can't be embedded, the PDF shows a labelled placeholder
+instead of failing. Heading and text-block items are read-only content (no
+answer to save), so they never appear as PDF form fields.
 
 ## Local development
 

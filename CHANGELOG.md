@@ -1,5 +1,27 @@
 # Changelog
 
+## v1.4 — 2026-09-16
+
+- Sections are now a single ordered list of items, and a "question" is just one
+  kind of item. You can freely mix in headings and free-text blocks between
+  questions, and images can now be placed anywhere in that order too (previously
+  images always rendered before every question in a column).
+- Every worksheet, section, and question/content item in the Builder can be
+  moved up, moved down, or duplicated — no more rebuilding similar content
+  from scratch or being stuck with the order you first added things in.
+- Worksheet and section cards in the Builder can be collapsed while you work,
+  independent of the student-facing collapsible-section feature.
+- Deleting a worksheet, section, or question now asks for confirmation first.
+- Added a "Load example workbook" button that loads a small pre-built workbook
+  whose questions already match the sample PDF included in this repo, so you
+  can see the upload/download PDF flow actually work without building
+  anything first.
+- The status message shown after a PDF upload (including "no fields matched")
+  is now a visible bordered banner instead of small grey text easy to miss.
+- Fixed: a PDF upload that matched zero questions gave no visible feedback
+  strong enough to be noticed. The example workbook above gives a positive
+  case to compare against, and the banner styling makes both outcomes clear.
+
 ## v1.3 — 2026-09-06
 
 - Fixed the Live Preview panel in the Builder not rendering.
