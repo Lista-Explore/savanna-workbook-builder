@@ -24,6 +24,11 @@ once and shared across every workbook.
   not one long page. Build opens on a compact outline of your worksheets;
   clicking one opens an editor scoped to just that worksheet, so you're
   never looking at your whole workbook's content at once.
+- On a fresh session, Build opens with an already-editable blank workbook
+  plus a small inline prompt offering to start from the example or import
+  an existing workbook instead — not a gate, just an option sitting above
+  content you can start typing into immediately. Returning sessions with a
+  saved draft skip it and resume straight into your own work.
 - A section is an ordered list you fully control: headings, free-text blocks,
   images, and questions can be mixed in any order, not just questions.
 - Sections can be collapsible in the student view, and can use 1, 2 or 3

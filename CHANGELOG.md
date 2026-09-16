@@ -1,5 +1,18 @@
 # Changelog
 
+## v1.5.1 — 2026-09-16
+
+Added a lightweight starting choice, but not as a gate. The Build outline
+always opens straight into an already-editable blank workbook — nothing
+blocks you from just typing a title and going. On a fresh session (no saved
+draft), a small inline banner sits above it: *"Starting a new workbook? ...
+or start differently"* with two buttons, **Use the example instead** and
+**Import existing workbook instead**. Picking one swaps the content in
+place (or opens a file picker for import) without navigating away from the
+page; dismissing it or just editing the blank workbook makes it go away.
+Returning sessions with a saved draft skip it entirely and resume straight
+into their own work, as before.
+
 ## v1.5 — 2026-09-16
 
 Restructured the Builder around the actual content model instead of putting
