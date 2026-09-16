@@ -2,6 +2,21 @@
 
 ## v1.4 — 2026-09-16
 
+- Fixed: every column had its own visual bucket in the Builder, but there was
+  only one "+ Add content" button for the whole section, so a new item
+  always landed in Column 1 regardless of which column you were looking at,
+  and it always defaulted to a generic question with no obvious way to make
+  it a heading/text/image without a follow-up edit. Each column now has its
+  own add row with explicit "+ Question / + Heading / + Text / + Image"
+  buttons, so new items land exactly where you're adding them, as the type
+  you actually meant.
+- Removed a duplicated ~35-line block of authoring-UI CSS (an entire earlier
+  copy of the same rules, always overridden by a near-identical later one)
+  and about a dozen CSS classes left over from an earlier design draft that
+  the generated HTML never used (`.question-card`, `.studio-form-field`,
+  `.preview-shell`, `.danger-button`, and others). No visual change; this
+  was a cleanliness pass, verified with a script that checks every CSS class
+  is actually referenced somewhere in the generated output.
 - Multi-column sections are now laid out as real side-by-side columns in the
   Builder itself, not just in Live Preview. Changing an item's column
   reflects immediately, and moving an item up/down moves it within its own
