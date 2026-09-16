@@ -2,6 +2,11 @@
 
 ## v1.4 — 2026-09-16
 
+- Fixed a significant disorientation bug: Live Preview reset to worksheet 1
+  on every single edit anywhere in the Builder, even something unrelated on
+  a different worksheet. If you were reviewing worksheet 3 and tweaked a
+  label on worksheet 1, Preview would yank you back to worksheet 1. It now
+  stays on whichever worksheet tab you were viewing.
 - Fixed three buttons that didn't work as expected, found by clicking every
   control in the Builder rather than assuming they worked:
   - Delete (on a worksheet, section, or question) silently did nothing when
