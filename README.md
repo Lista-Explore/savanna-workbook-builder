@@ -23,7 +23,9 @@ once and shared across every workbook.
 - A section is an ordered list you fully control: headings, free-text blocks,
   images, and questions can be mixed in any order, not just questions.
 - Sections can be collapsible in the student view, and can use 1, 2 or 3
-  columns; any item can be assigned to a column.
+  columns; any item can be assigned to a column, and the Builder lays items
+  out in real side-by-side columns as you edit — not just in Live Preview —
+  so you can see the layout you're actually building.
 - Every worksheet, section, and item can be moved up/down, duplicated, or
   deleted (with a confirmation) directly in the Builder.
 - Worksheet and section cards in the Builder can be collapsed while authoring,

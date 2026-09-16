@@ -14,7 +14,11 @@ HTTP and open `studio.html`.
 - [ ] Add a question of each type (short text, long text, number, dropdown,
       radio, checkbox, checkbox group, option list, date) and confirm it
       renders correctly in Live Preview.
-- [ ] Set a section to 2 or 3 columns and confirm the layout updates.
+- [ ] Set a section to 2 or 3 columns and confirm the Builder itself (not
+      just Live Preview) immediately shows real side-by-side columns.
+      Change an item's Column dropdown and confirm it jumps to the correct
+      column bucket right away. Confirm an item's Up/Down buttons move it
+      within its own column and don't jump it into another column.
 - [ ] Enable "Allow students to collapse this section" and confirm the
       collapse/expand toggle works (this is the student-facing collapse; see
       below for the separate Builder-authoring collapse).

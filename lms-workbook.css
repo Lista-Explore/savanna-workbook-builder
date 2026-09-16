@@ -170,6 +170,11 @@
 .lms-workbook-authoring .card-actions .text-button:hover:not(:disabled){background:#f4f4f4;text-decoration:none}
 .lms-workbook-authoring .content-block-editor{border-left:3px solid #999}
 .lms-workbook-authoring .is-collapsed .editor-card-body,.lms-workbook-authoring .is-collapsed .editor-section-body{display:none}
+/* v1.4 Builder mirrors the student column layout while authoring */
+.lms-workbook-authoring [data-fields].is-multicolumn{display:grid;grid-template-columns:repeat(var(--wb-builder-columns,1),minmax(0,1fr));gap:16px;align-items:start}
+.lms-workbook-authoring .field-column{min-width:0;border:1px dashed #d5d5d5;border-radius:10px;padding:10px}
+.lms-workbook-authoring .field-column-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:#888;margin:2px 4px 10px}
+@media(max-width:850px){.lms-workbook-authoring [data-fields].is-multicolumn{grid-template-columns:1fr}}
 /* v1.3 visible status banner (only shown once there is a message) */
 .lms-workbook-status{min-height:0;margin-top:0}
 .lms-workbook-status.has-content{margin-top:14px;padding:10px 14px;border-radius:8px;background:var(--wb-soft);border:1px solid var(--wb-line);font-size:13px;color:var(--wb-ink)}

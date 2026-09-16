@@ -2,6 +2,11 @@
 
 ## v1.4 — 2026-09-16
 
+- Multi-column sections are now laid out as real side-by-side columns in the
+  Builder itself, not just in Live Preview. Changing an item's column
+  reflects immediately, and moving an item up/down moves it within its own
+  column instead of jumping across columns — the goal being that you can see
+  and trust the layout while you design, not just guess from a dropdown.
 - Fixed a real data-loss risk: the Builder never saved the workbook you were
   authoring anywhere — only a student's answers were saved, not your
   questions/sections/worksheets. An accidental refresh or closed tab lost
