@@ -2,6 +2,13 @@
 
 ## v1.4 — 2026-09-16
 
+- Simplified the question editor: every question showed Help, Placeholder,
+  Pattern, and a 5-field validation grid regardless of whether any of it
+  applied — a Yes/No checkbox showed the same form as a Number field. Those
+  are now tucked behind a closed "Advanced options" disclosure, cutting each
+  question card roughly in half by default. It opens automatically if a
+  question already has any of that filled in, so nothing already configured
+  gets hidden.
 - Fixed a significant disorientation bug: Live Preview reset to worksheet 1
   on every single edit anywhere in the Builder, even something unrelated on
   a different worksheet. If you were reviewing worksheet 3 and tweaked a

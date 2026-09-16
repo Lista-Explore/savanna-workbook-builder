@@ -108,6 +108,12 @@
 .lms-workbook-authoring .field-column-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:#888;margin:2px 4px 10px}
 @media(max-width:850px){.lms-workbook-authoring [data-fields].is-multicolumn{grid-template-columns:1fr}}
 .lms-workbook-authoring .add-item-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.lms-workbook-authoring .advanced-options{margin-top:14px;border-top:1px solid #e5e5e5;padding-top:12px}
+.lms-workbook-authoring .advanced-options summary{cursor:pointer;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#777;list-style:none}
+.lms-workbook-authoring .advanced-options summary::-webkit-details-marker{display:none}
+.lms-workbook-authoring .advanced-options summary::before{content:'▸ ';display:inline-block}
+.lms-workbook-authoring .advanced-options[open] summary::before{content:'▾ '}
+.lms-workbook-authoring .advanced-options label:first-of-type{margin-top:12px}
 /* Visible status banner (only shown once there is a message) */
 .lms-workbook-status{min-height:0;margin-top:0}
 .lms-workbook-status.has-content{margin-top:14px;padding:10px 14px;border-radius:8px;background:var(--wb-soft);border:1px solid var(--wb-line);font-size:13px;color:var(--wb-ink)}
