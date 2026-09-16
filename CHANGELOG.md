@@ -2,6 +2,11 @@
 
 ## v1.4 — 2026-09-16
 
+- Fixed a real data-loss risk: the Builder never saved the workbook you were
+  authoring anywhere — only a student's answers were saved, not your
+  questions/sections/worksheets. An accidental refresh or closed tab lost
+  everything you had built. The Builder now autosaves your draft to this
+  browser on every edit and restores it automatically next time you open it.
 - Sections are now a single ordered list of items, and a "question" is just one
   kind of item. You can freely mix in headings and free-text blocks between
   questions, and images can now be placed anywhere in that order too (previously

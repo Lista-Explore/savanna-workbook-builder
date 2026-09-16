@@ -30,6 +30,8 @@ once and shared across every workbook.
   to keep a long workbook navigable.
 - A "Load example workbook" button gives you a working starting point that
   already matches the sample PDF included in this repo.
+- The Builder autosaves your in-progress workbook definition to this browser
+  on every edit and restores it if you reload or reopen the tab.
 - The generated HTML renders the real form controls, not placeholders.
 - Worksheet tabs use explicit worksheet indexes, so any number of worksheets works correctly.
 - Styling is Poppins, grayscale/black-and-white, with no brand colour — intended to be restyled per LMS.

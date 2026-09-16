@@ -5,6 +5,10 @@ HTTP and open `studio.html`.
 
 ## Builder / Live Preview
 
+- [ ] Make an edit (e.g. change the workbook title), reload the page, and
+      confirm the edit is still there with a "Restored your unsaved draft"
+      message — this is the Builder's own autosave, separate from student
+      answer storage.
 - [ ] Add a second and third worksheet — every tab is clickable and shows the
       correct worksheet.
 - [ ] Add a question of each type (short text, long text, number, dropdown,
