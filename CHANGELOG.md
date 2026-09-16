@@ -1,5 +1,36 @@
 # Changelog
 
+## v1.5 — 2026-09-16
+
+Restructured the Builder around the actual content model instead of putting
+the entire workbook on one continuously-scrolling page. Previously, opening
+the Builder rendered workbook settings, every worksheet, every section,
+every question, Live Preview, and Publish all at once — for anything beyond
+a trivial workbook this was overwhelming regardless of how individual boxes
+were styled, because the problem was structural, not visual.
+
+- The Builder now has three views, reachable from tabs at the top:
+  **Build**, **Live Preview**, **Publish** — each full width, one thing at
+  a time, instead of three panels stacked on the same page.
+- **Build** opens on a compact outline: workbook settings plus a list of
+  worksheets (title and a "3 sections · 8 questions" count each), not
+  their expanded content. Click a worksheet to open an editor scoped to
+  *only* that worksheet — other worksheets aren't in the DOM at all while
+  you're working on one. A "← All worksheets" link goes back.
+- Reordering, duplicating, and deleting worksheets now happens from the
+  outline list; deleting a worksheet you're currently editing returns you
+  to the outline afterward.
+- Worksheet-level collapse/expand no longer exists as a separate control,
+  because it's no longer needed — you only ever see one worksheet's
+  content at a time. Section-level collapse (for organizing a long
+  worksheet) is unchanged.
+- Fixed a bug this restructure surfaced: the "restored your draft"
+  message was being written into the Publish panel's output area, which
+  no longer exists by default on load (Build does). Moved it to a
+  one-time banner on the outline screen.
+- Removed the sidebar and its non-functional click targets entirely — the
+  outline list now serves that purpose and actually works.
+
 ## v1.4 — 2026-09-16
 
 - Reverted the sticky 3-column split (editor / preview side-by-side) —

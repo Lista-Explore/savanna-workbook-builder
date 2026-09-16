@@ -3,14 +3,26 @@
 Use this list to verify a new build before publishing. Serve the folder over
 HTTP and open `studio.html`.
 
-## Builder / Live Preview
+## Navigation (Build / Live Preview / Publish)
 
+- [ ] On load, confirm you land on the **Build** outline — workbook settings
+      plus a list of worksheets with counts, not their expanded content.
+- [ ] Click a worksheet in the outline — confirm it opens an editor scoped
+      to only that worksheet, and "← All worksheets" returns to the outline.
+- [ ] Click the **Live Preview** and **Publish** tabs — confirm each shows
+      only its own full-width content, and the **Build** tab stays
+      highlighted while you're inside a worksheet editor (not just on the
+      outline).
 - [ ] Make an edit (e.g. change the workbook title), reload the page, and
       confirm the edit is still there with a "Restored your unsaved draft"
-      message — this is the Builder's own autosave, separate from student
-      answer storage.
-- [ ] Add a second and third worksheet — every tab is clickable and shows the
-      correct worksheet.
+      message on the outline screen — this is the Builder's own autosave,
+      separate from student answer storage.
+
+## Builder / Live Preview
+
+- [ ] Add a second and third worksheet from the outline — confirm each
+      auto-opens for editing, and in Live Preview every worksheet tab is
+      clickable and shows the correct worksheet.
 - [ ] Add a question of each type (short text, long text, number, dropdown,
       radio, checkbox, checkbox group, option list, date) and confirm it
       renders correctly in Live Preview.
@@ -27,11 +39,11 @@ HTTP and open `studio.html`.
       Live Preview.
 - [ ] Move a question up/down within a section and confirm both the Builder
       card order and Live Preview order update to match.
-- [ ] Duplicate a worksheet, a section, and a question, and confirm the copy
-      appears right after the original with independent state (editing the
-      copy doesn't affect the original).
-- [ ] Click "Collapse" on a worksheet or section card in the Builder, then
-      make an unrelated edit elsewhere (e.g. type in the workbook title) —
+- [ ] Duplicate a worksheet (from the outline), a section, and a question,
+      and confirm the copy appears right after the original with
+      independent state (editing the copy doesn't affect the original).
+- [ ] Click "Collapse" on a section card in the Builder, then make an
+      unrelated edit elsewhere (e.g. type in the section instructions) —
       confirm the card stays collapsed.
 - [ ] Click "Delete" on a worksheet/section/question and cancel the
       confirmation — confirm nothing is deleted. Confirm it and check it is.

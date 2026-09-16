@@ -20,6 +20,10 @@ once and shared across every workbook.
 
 ## Features
 
+- The Builder is three views — **Build**, **Live Preview**, **Publish** —
+  not one long page. Build opens on a compact outline of your worksheets;
+  clicking one opens an editor scoped to just that worksheet, so you're
+  never looking at your whole workbook's content at once.
 - A section is an ordered list you fully control: headings, free-text blocks,
   images, and questions can be mixed in any order, not just questions.
 - Sections can be collapsible in the student view, and can use 1, 2 or 3
@@ -28,8 +32,6 @@ once and shared across every workbook.
   so you can see the layout you're actually building.
 - Every worksheet, section, and item can be moved up/down, duplicated, or
   deleted (with a confirmation) directly in the Builder.
-- Worksheet and section cards in the Builder can be collapsed while authoring,
-  to keep a long workbook navigable.
 - A "Load example workbook" button gives you a working starting point that
   already matches the sample PDF included in this repo.
 - The Builder autosaves your in-progress workbook definition to this browser
