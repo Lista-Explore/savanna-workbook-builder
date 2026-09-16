@@ -1,5 +1,31 @@
 # Changelog
 
+## v1.5.2 — 2026-09-16
+
+- Fixed: a new worksheet auto-created a section, and a new section
+  auto-created a "Question" field — and that field's Delete button was
+  disabled while it was the only one, so it was effectively stuck there
+  unless you added a second item first. Worksheets and sections now start
+  empty; you add exactly what you want via the buttons, and any item can
+  always be deleted, down to zero if you want.
+- Removed the per-item "Column" dropdown. Moving an item between columns
+  is now explicit buttons ("→ Col 2", "→ Col 3") next to the other item
+  actions, matching the per-column add buttons already there.
+- Sections had no visual boundary after the last density pass — just a
+  thin top rule, so with more than one section it wasn't clear where one
+  ended and the next began. Sections are now a distinct light-toned
+  container (lighter than the worksheet card, so it doesn't recreate the
+  nested-box problem), giving a real, visible edge.
+- Section collapse/expand now toggles by clicking anywhere on the section
+  header banner (with a chevron indicating state), not just a small
+  button — a much bigger, easier target. Clicking the actual action
+  buttons (move/duplicate/delete) in that same header no longer also
+  triggers collapse.
+- Fixed a layout bug this surfaced: with the new column-move buttons
+  added, a question's action row (up to 6 buttons) could overflow a
+  narrow multi-column bucket and visually overlap the next column. The
+  header row now wraps properly above a certain button count.
+
 ## v1.5.1 — 2026-09-16
 
 Added a lightweight starting choice, but not as a gate. The Build outline
