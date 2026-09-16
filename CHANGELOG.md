@@ -2,10 +2,15 @@
 
 ## v1.4 — 2026-09-16
 
-- Live Preview now sits alongside the editor and stays in view as you
-  scroll, instead of sitting at the bottom of a long page you had to
-  scroll away from to check your work. Falls back to the original stacked
-  layout on narrower screens.
+- Reverted the sticky 3-column split (editor / preview side-by-side) —
+  it squeezed everything into narrow columns and made the page feel more
+  cramped, not less. Back to a single, full-width editing column.
+- Fixed the actual source of the "squeezed" feeling: worksheet, section,
+  and question were each wrapped in their own bordered, shadowed white
+  box, so editing a question meant looking at a box inside a box inside
+  a box, all the same visual weight. Only the worksheet card keeps that
+  treatment now; sections and questions inside it are told apart with
+  spacing, dividers, and type size instead of repeated boxes.
 - The left sidebar listed "Workbook settings" and each worksheet like a
   table of contents, but clicking them did nothing — no cursor change, no
   handler. They're now real navigation: clicking a worksheet scrolls to it

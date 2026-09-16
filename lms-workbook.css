@@ -54,15 +54,16 @@
 .lms-workbook-authoring .studio-note{border:1px solid #d8d8d8;border-radius:12px;background:#fff;padding:15px 18px;margin-bottom:20px;display:grid;gap:5px}
 .lms-workbook-authoring .studio-note span{color:#666;font-size:13px}
 .lms-workbook-authoring .studio-layout{display:grid;grid-template-columns:210px minmax(0,1fr);gap:20px;align-items:start}
-.lms-workbook-authoring .studio-main-columns{display:grid;grid-template-columns:minmax(0,1fr) 420px;gap:22px;align-items:start}
-.lms-workbook-authoring .studio-side{position:sticky;top:18px;max-height:calc(100vh - 36px);overflow-y:auto;padding-right:2px}
-@media(max-width:1150px){.lms-workbook-authoring .studio-main-columns{grid-template-columns:1fr}.lms-workbook-authoring .studio-side{position:static;max-height:none}}
 .lms-workbook-authoring .studio-sidebar{position:sticky;top:18px}
 .lms-workbook-authoring .studio-sidebar-inner{background:#fff;border:1px solid #ddd;border-radius:12px;padding:12px}
 .lms-workbook-authoring .studio-sidebar-title{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#777;padding:7px 9px}
 .lms-workbook-authoring .nav-item{padding:10px 9px;border-radius:8px;font-size:13px;color:#555;margin:2px 0;cursor:pointer}.lms-workbook-authoring .nav-item:hover{background:#eee}.lms-workbook-authoring .nav-item-active{background:#111;color:#fff}.lms-workbook-authoring .nav-item-active:hover{background:#111}
 .lms-workbook-authoring .nav-number{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:#eee;color:#333;font-size:11px;font-weight:700;margin-right:7px}
-.lms-workbook-authoring .editor-card,.lms-workbook-authoring .editor-section,.lms-workbook-authoring .question-editor,.lms-workbook-authoring .preview-panel,.lms-workbook-authoring .publish-panel{background:#fff;border:1px solid #ddd;border-radius:14px;padding:22px;margin-bottom:16px;box-shadow:0 2px 10px rgba(0,0,0,.03)}
+.lms-workbook-authoring .editor-card,.lms-workbook-authoring .preview-panel,.lms-workbook-authoring .publish-panel{background:#fff;border:1px solid #ddd;border-radius:14px;padding:22px;margin-bottom:16px;box-shadow:0 2px 10px rgba(0,0,0,.03)}
+.lms-workbook-authoring .editor-section{border-top:1px solid #e8e8e8;padding:22px 0;margin:0}
+.lms-workbook-authoring .editor-section:first-of-type{border-top:0;padding-top:2px}
+.lms-workbook-authoring .question-editor{border-bottom:1px solid #ececec;padding:16px 0;margin:0}
+.lms-workbook-authoring .question-editor:last-child{border-bottom:0;padding-bottom:2px}
 .lms-workbook-authoring .editor-card-head,.lms-workbook-authoring .editor-section-head,.lms-workbook-authoring .question-head,.lms-workbook-authoring .panel-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;margin-bottom:18px}
 .lms-workbook-authoring .editor-card h2{font-size:20px;margin:2px 0 0}.lms-workbook-authoring .editor-section h3{font-size:16px;margin:2px 0 0}
 .lms-workbook-authoring .form-grid,.lms-workbook-authoring .validation-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.lms-workbook-authoring .form-span-2{grid-column:1/-1}
@@ -70,7 +71,7 @@
 .lms-workbook-authoring input:not([type=checkbox]):not([type=radio]),.lms-workbook-authoring select,.lms-workbook-authoring textarea{width:100%;border:1px solid #bbb;border-radius:8px;background:#fff;padding:10px 12px;color:#111;outline:none}
 .lms-workbook-authoring textarea{min-height:82px;resize:vertical}.lms-workbook-authoring input:focus,.lms-workbook-authoring select:focus,.lms-workbook-authoring textarea:focus{border-color:#111;box-shadow:0 0 0 3px #eee}
 .lms-workbook-authoring small{font-size:11px;color:#777;font-weight:400}.lms-workbook-authoring .check-row{display:flex;align-items:center;gap:8px;font-weight:500;background:#f7f7f7;border:1px solid #e2e2e2;border-radius:8px;padding:10px 12px}.lms-workbook-authoring .check-row input{width:auto;margin:0}
-.lms-workbook-authoring .question-editor{margin:12px 0;background:#fafafa}.lms-workbook-authoring .question-head strong{font-size:14px}.lms-workbook-authoring .question-number{display:inline-block;background:#111;color:#fff;border-radius:6px;padding:3px 7px;font-size:10px;margin-right:8px;font-weight:700}
+.lms-workbook-authoring .question-head strong{font-size:14px}.lms-workbook-authoring .question-number{display:inline-block;background:#111;color:#fff;border-radius:6px;padding:3px 7px;font-size:10px;margin-right:8px;font-weight:700}
 .lms-workbook-authoring .panel-kicker{color:#777}.lms-workbook-authoring .add-button{display:inline-flex;align-items:center;border:1px dashed #999;border-radius:8px;background:#fff;padding:9px 12px;color:#111;font-weight:600}.lms-workbook-authoring .add-button:hover{background:#f5f5f5}
 .lms-workbook-authoring .text-button{border:0;background:transparent;padding:5px 7px;color:#555;font-weight:600}.lms-workbook-authoring .text-button:hover{color:#111;text-decoration:underline}
 .lms-workbook-authoring .options-heading{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#777;margin:14px 0 8px}.lms-workbook-authoring .wb-option{display:grid;grid-template-columns:1fr auto;gap:8px;margin:7px 0}
@@ -103,7 +104,7 @@
 .lms-workbook-authoring .card-actions .text-button{border:1px solid #ddd;border-radius:6px;padding:5px 9px}
 .lms-workbook-authoring .card-actions .text-button:disabled{opacity:.35;cursor:default}
 .lms-workbook-authoring .card-actions .text-button:hover:not(:disabled){background:#f4f4f4;text-decoration:none}
-.lms-workbook-authoring .content-block-editor{border-left:3px solid #999}
+.lms-workbook-authoring .content-block-editor{border-left:3px solid #999;padding-left:14px}
 .lms-workbook-authoring .is-collapsed .editor-card-body,.lms-workbook-authoring .is-collapsed .editor-section-body{display:none}
 /* Builder mirrors the student column layout while authoring */
 .lms-workbook-authoring [data-fields].is-multicolumn{display:grid;grid-template-columns:repeat(var(--wb-builder-columns,1),minmax(0,1fr));gap:16px;align-items:start}
